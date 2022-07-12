@@ -1,5 +1,5 @@
 ### This program generates a really long _password_ , a sha256 hash value, generated from a phrase and a simple text file (eg. 5b5df6e0e1e807f60f12138f36b22b1a194b927bb716faf72f4469a91ccd30db)
-## The strength of the password relies on both the phrase and the text but it can range from hard to impossible to crack, using the right text.
+### The strength of the password relies on both the phrase and the text but it can range from hard to practically impossible to crack using the right text file.
 
 How the program works?
 ----------------------
@@ -23,4 +23,4 @@ Make configurations like adding special characters and unused characters for bet
 
 * * *
 
-_I am in no way an expert. If you find a hole in the code or the whole idea of this re-hashing the hash based on the charactes in a text book, please let me know. It is always exciting to talk about stuffs like that._
+_I am in no way an expert. If you find a hole in the code or the whole idea of this re-hashing the hash based on the charactes in a secret text book, please let me know. It is always exciting to talk about stuffs like that._
