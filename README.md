@@ -1,13 +1,14 @@
-### This program generates a really long password _which is a hash value_ from the combination of a phrase, a very long text file and configurations like special chars and unused chars.
+### This program generates a really long _password_ , a sha256 hash value, generated from a phrase and a simple text file (eg. 5b5df6e0e1e807f60f12138f36b22b1a194b927bb716faf72f4469a91ccd30db)
+## The strength of the password relies on both the phrase and the text but it can range from hard to impossible to crack, using the right text.
 
 How the program works?
 ----------------------
 
 It can be troublesome to explain the flow in detail or maybe I can't explain very well. _(For actual detail, Plese, see the source code. It's only 50 lines long)_
 
-### First we hash a given phrase using sha256, resulting in a series of byte, which is the immature version of the password.  
-The given text file is turned into 1 and 0 based on certain critera, the computer starts reading those instructions.  
-0 means we will re-hash that series of byte using sha256 and 1 means first we reverse the series of bytes (\[byte1, byte2, .., byteN\] ==> \[byteN, ... , byte2, byte1\]) , and only after that, re-hash those bytes using sha256.  
+#### First we hash a given phrase using sha256, resulting in a series of byte, which is the immature version of the password.  
+#### The given text file is turned into 1 and 0 based on certain critera, the computer starts reading those instructions.  
+#### 0 means we will re-hash that series of byte using sha256 and 1 means first we reverse the series of bytes (\[byte1, byte2, .., byteN\] ==> \[byteN, ... , byte2, byte1\]) , and only after that, re-hash those bytes using sha256.  
 
 _Tips on running txtpg_
 -----------------------
