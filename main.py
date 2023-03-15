@@ -34,7 +34,7 @@ txtFileName = input("Enter the text file name with txt entension (default is " +
 try:
     if txtFileName == '':
         txtFileName = defaultFileName
-    with open(txtFileName, 'r') as f:
+    with open(txtFileName, encoding='utf-8') as f:
         novel = f.read()
     for u in unused_chars:          # removing some characters, makes the program run faster
         novel = novel.replace(u, '')
